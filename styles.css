@@ -7,6 +7,7 @@ html {
     font-weight: 300;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .header-section {
     position: absolute;
     top: 0;
@@ -70,7 +71,7 @@ html {
 /* <!-- Hero Section --> */
 .hero-section {
     position: relative;
-    height: 85vh;
+    height: 100vh;
     color: #fff;
     overflow: hidden;
 }
@@ -95,7 +96,7 @@ html {
 
 .banner-slide h1 span {
     color: #77FFFF;
-    font-size: 5.4375rem;
+    font-size: 4.1375rem;
     font-weight: 800;
     line-height: 100px;
     text-align: left;
@@ -117,6 +118,7 @@ html {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    opacity: 0.3;
 }
 
 .slider-banner .slick-dots {
@@ -221,7 +223,7 @@ html {
     position: absolute;
     top: -22%;
     left: 16%;
-    font-size: 14rem;
+    font-size: 380px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.04);
     z-index: 1;
@@ -232,14 +234,16 @@ html {
     position: relative;
     z-index: 2;
     text-align: left;
+    margin-top: 8%;
 }
 
-.about-content p {
-    color: #989898;
+.about-data {
+    color: var(--Color-5, #51516A);
     font-family: Poppins;
+    font-size: 17px;
     font-style: normal;
-    line-height: 175%;
-    /* 36.75px */
+    font-weight: 300;
+    line-height: 175%; /* 35px */
     text-transform: capitalize;
 }
 
@@ -256,7 +260,7 @@ p {
 }
 
 .approach-section-bg {
-    background-image: url(../assets/approachBG.png);
+    background-image: url(assets/approachBG.png);
     height: 130px;
     width: 100%;
     background-repeat: no-repeat;
@@ -347,12 +351,16 @@ p {
 .product-section {
     background-color: transparent;
     position: relative;
-    padding-top: 150px !important;
+    padding-top: 280px !important;
+}
+
+.product-container{
+    max-width: 1472px !important;
 }
 
 .product-section-bg {
-    background-image: url(../assets/wave.jpg);
-    height: 230px;
+    background-image: url(assets/wave.jpg);
+    height: 440px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -374,6 +382,7 @@ p {
 
 .product-card .card-title {
     font-weight: 500 !important;
+    margin-top: 5%;
 }
 
 .product-card {
@@ -506,7 +515,7 @@ p {
 /* <!-- Why Ubolt Section --> */
 
 .why-ubolt {
-    background-image: url(../assets/why-ubolt-bg.png);
+    background-image: url(assets/why-ubolt-bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 8rem 0;
@@ -520,22 +529,22 @@ p {
 
 .diamond {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 281px;
+    height: 281px;
 }
 
 .ubolt-logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100px;
+    width: 185px;
     transform: translate(-50%, -50%);
 }
 
 .icon {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -548,25 +557,25 @@ p {
 
 .icon.top {
     left: 50%;
-    top: -64px;
+    top: -90px;
     transform: translateX(-50%);
 }
 
 .icon.right {
     top: 50%;
-    right: -64px;
+    right: -90px;
     transform: translateY(-50%);
 }
 
 .icon.bottom {
-    bottom: -64px;
+    bottom: -90px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .icon.left {
     top: 50%;
-    left: -64px;
+    left: -90px;
     transform: translateY(-50%);
 }
 
@@ -785,12 +794,14 @@ p {
 
 /* <!-- commmon css --> */
 .section-sub-header {
-    color: #000000;
-    opacity: 0.3px;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 0px;
+    color: var(--Black, #000);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
     opacity: 0.4;
+    margin: 0;
 }
 
 .section-main-header {
@@ -801,18 +812,12 @@ p {
 }
 
 .section-main-header-about {
-    text-align: center;
+    color: var(--Black, #000);
     font-family: Poppins;
-    font-size: 59px;
+    font-size: 46px;
     font-style: normal;
-    font-weight: 800;
-    line-height: 100px;
-    /* 169.492% */
-    text-transform: capitalize;
-    background: linear-gradient(90deg, #039 0%, #013 100%);
-    background-clip: text;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    line-height: 60px; /* 130.435% */
 }
 
 .dynamic-number::before {
@@ -888,4 +893,75 @@ p {
 
 .Read-more {
     font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.business-process-heading h6{
+    color: var(--Gray-gray-900, #1A202C) !important;
+
+}
+
+
+#typing-text {
+    display: inline-block;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: caret 0.7s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.img-fluid-new{
+    max-width: 60% !important;
+    height: auto !important;
+}
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.modal-body img {
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+.modal-body .content {
+    flex: 1;
+    text-align: justify;
+    margin-right: 60px;
+}
+
+.content h3{
+    color: var(--Color-1, #039);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    margin: 0;
+}
+
+.content h6{
+    color: var(--Black, #000);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 188.235% */
+    margin: 0;
+    opacity: 0.6;
+}
+
+.modal-lg, .modal-xl {
+    --bs-modal-width: 914px !important;
 }
