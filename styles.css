@@ -1344,6 +1344,7 @@ a {
 #toTop {
     /* padding: 5px 3px; */
     background: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
     /* color: #fff; */
     position: fixed;
     bottom: 20px;
@@ -1360,7 +1361,12 @@ a {
 }
 
 #toTop:hover {
-    background: #e7e7e7;
+    background: #003399;
+}
+
+
+#toTop:hover svg {
+    color: #fff;
 }
 
 #toTop svg {
