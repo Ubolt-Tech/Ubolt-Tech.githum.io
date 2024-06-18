@@ -2,7 +2,7 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
     /* font-size: 20px; */
     font-style: normal;
@@ -305,7 +305,7 @@ html,
 p {
     /* color: var(--Color-5, #51516A); */
     line-height: normal;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 /* !-- Approach Section --> */
@@ -992,6 +992,7 @@ line-height: 60px !important; /* 222.222% */
 }
 
 .dynamic-number::before {
+    display: none;
     content: attr(data-number) " ";
     /* Display the dynamic number */
     color: inherit;
@@ -1017,6 +1018,7 @@ line-height: 60px !important; /* 222.222% */
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
+    position: absolute;
     /* 40% */
     display: flex;
     width: 74px;
@@ -1102,8 +1104,9 @@ a {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 48px;
     letter-spacing: -0.09px;
+    margin: 0px 0 0 65px;
 }
 
 #typing-text {
