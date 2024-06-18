@@ -1176,28 +1176,31 @@ a {
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--Color-1, #039) !important;
-    font-family: Poppins !important;
-    font-size: 24px !important;
-    font-style: normal !important;
-    font-weight: 500 !important;
-    line-height: normal !important;
-    text-transform: uppercase !important;
-    background-color: transparent !important;
-    box-shadow: none !important
+    /* color: var(--Color-1, #039) !important; */
+    /* font-family: Poppins !important; */
+    /* font-size: 24px !important; */
+    /* font-style: normal !important; */
+    /* font-weight: 500 !important; */
+    /* line-height: normal !important; */
+    /* text-transform: capitalize !important; */
+    /* box-shadow: none !important */
 }
 
 .accordion-button {
+    background-color: transparent !important;
     color: var(--Color-1, #039) !important;
     font-family: Poppins !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-style: normal !important;
     font-weight: 500 !important;
     line-height: normal, !important;
-    text-transform: uppercase !important;
+    text-transform: capitalize !important;
     padding: 0 !important;
 }
 
+.accordion-button:focus {
+    box-shadow: none;
+}
 .accordion-body {
     color: var(--Color-5, #51516A);
     /* font-family: Poppins;
