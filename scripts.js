@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
   typeText();
 });
 
-$(".banner-button").on("click", function () {
+$(".login-button").on("click", function () {
   var currentSlide = $(".slider-banner").slick("slickCurrentSlide");
   var targetSection;
 
