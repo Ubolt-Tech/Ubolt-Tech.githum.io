@@ -265,14 +265,6 @@ html,
     }
 }
 
-.slider-banner .banner-slide {
-  display: none;
-}
-
-.slider-banner .slick-active {
-  display: block;
-}
-
 /* <!-- About Section --> */
 .about-section {
     position: relative;
